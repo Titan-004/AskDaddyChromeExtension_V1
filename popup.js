@@ -35,9 +35,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function appendMessage(text, className) {
         const messageElement = document.createElement("p");
-        messageElement.textContent = text;
+        messageElement.innerHTML = text; // Use innerHTML to render line breaks
         messageElement.classList.add(className);
         chatBox.appendChild(messageElement);
         chatBox.scrollTop = chatBox.scrollHeight; // Auto-scroll
     }
+    
 });

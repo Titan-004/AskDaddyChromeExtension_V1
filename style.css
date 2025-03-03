@@ -37,7 +37,7 @@ p {
     width: 60px; /* Adjust size as needed */
     height: 60px;
     position: absolute;
-    top: -30px; /* Float above the box */
+    top: 5px; /* Pulled down */
     left: 50%;
     transform: translateX(-50%);
     border-radius: 50%;
@@ -50,6 +50,7 @@ p {
 #floating-icon:hover {
     transform: translateX(-50%) scale(1.1); /* Slight zoom on hover */
 }
+
 
 .bot-message {
     background: #444;
