@@ -10,6 +10,7 @@ body {
     padding: 10px;
 }
 
+/* Custom Scrollbar */
 #chat-box {
     width: 100%;
     height: 80%;
@@ -18,7 +19,32 @@ body {
     padding: 10px;
     overflow-y: auto;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    
+    /* Custom Scrollbar for Webkit Browsers */
+    scrollbar-width: thin;
+    scrollbar-color: #888 #1e1e1e;
 }
+
+/* For Webkit Browsers (Chrome, Edge, Safari) */
+#chat-box::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+}
+
+#chat-box::-webkit-scrollbar-track {
+    background: #1e1e1e; /* Background of the scrollbar track */
+    border-radius: 10px;
+}
+
+#chat-box::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, #007bff, #00c6ff); /* Gradient color */
+    border-radius: 10px;
+    transition: background 0.3s ease-in-out;
+}
+
+#chat-box::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(45deg, #0056b3, #0084ff); /* Slightly darker on hover */
+}
+
 
 p {
     padding: 8px;
